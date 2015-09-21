@@ -4,6 +4,8 @@
 #include <cstdlib>
 #include <cstring>
 
+using namespace cliqCity::memory;
+
 LinearAllocator::LinearAllocator(size_t size) : mIsOwner(true)
 {
 	mStart		= (uint8_t*)malloc(size);

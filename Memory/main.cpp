@@ -1,7 +1,9 @@
+#ifndef _WINDLL
+
 #include "LinearAllocator.h"
 #include <stdio.h>
 
-//#define HEAP 0
+using namespace cliqCity::memory;
 
 int main(int argc, int* argv[])
 {
@@ -32,3 +34,7 @@ int main(int argc, int* argv[])
 
 	return 0;
 }
+
+#endif // !_WINDLL
+
+
