@@ -28,7 +28,6 @@ LinearAllocator::LinearAllocator()
 
 LinearAllocator::~LinearAllocator()
 {
-	Free();
 	mStart		= nullptr;
 	mEnd		= nullptr;
 	mCurrent	= nullptr;
@@ -61,7 +60,7 @@ void LinearAllocator::Reset()
 
 void LinearAllocator::Free()
 {
-	if (mIsOwner) {
+	if (mIsOwner && mStart != nullptr) {
 		std::free(mStart);
 	}
 }
