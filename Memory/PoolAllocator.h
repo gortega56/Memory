@@ -1,10 +1,16 @@
 #pragma once
 
+#ifdef _WINDLL
+#define MEMORY_API __declspec(dllexport)
+#else
+#define MEMORY_API __declspec(dllimport)
+#endif
+
 namespace cliqCity
 {
 	namespace memory
 	{
-		class PoolAllocator
+		class MEMORY_API PoolAllocator
 		{
 		public:
 			typedef PoolAllocator Node;
