@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="AllocatorUtility.h" />
     <ClInclude Include="LinearAllocator.h" />
+    <ClInclude Include="Memory.h" />
     <ClInclude Include="PoolAllocator.h" />
   </ItemGroup>
   <ItemGroup>
