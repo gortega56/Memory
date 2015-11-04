@@ -122,12 +122,14 @@
     <ClInclude Include="LinearAllocator.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="PoolAllocator.h" />
+    <ClInclude Include="StackAllocator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllocatorUtility.c" />
     <ClCompile Include="LinearAllocator.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PoolAllocator.cpp" />
+    <ClCompile Include="StackAllocator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
